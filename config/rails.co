@@ -1,0 +1,41 @@
+# Colang 1.0 definition of user greeting
+define user express greeting
+  "hello"
+  "hi"
+  "hey"
+  "good morning"
+  "namaste"
+
+define flow greeting
+  user express greeting
+  bot express greeting
+
+define bot express greeting
+  "Hello! I am your Indian Market Research AI Assistant. I can help you analyze Indian stocks, mutual funds, F&O derivatives, and market trends. What would you like to research today?"
+
+# Colang definition of gratitude
+define user express gratitude
+  "thank you"
+  "thanks"
+  "bye"
+
+define flow gratitude
+  user express gratitude
+  bot express gratitude
+
+define bot express gratitude
+  "You're welcome! Let me know if you need any other Indian market research."
+
+# Colang definition of off-topic refusal
+define user ask off topic
+  "write me python code for a snake game"
+  "what is the capital of France?"
+  "write a poem"
+  "how to bake a cake"
+
+define flow off topic
+  user ask off topic
+  bot refuse off topic
+
+define bot refuse off topic
+  "I am specialized strictly in Indian Market Research. I can only assist with equities, derivatives, mutual funds, commodities, and financial indicators."
