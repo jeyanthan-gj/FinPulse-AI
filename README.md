@@ -88,7 +88,7 @@ Set your credentials:
 ```env
 OPENAI_API_BASE_URL=https://llmlite-cognivus.duckdns.org/v1
 OPENAI_API_KEY=your_key_here
-MODEL=llm-gemini
+MODEL=gpt-4o
 MCP_URL=http://127.0.0.1:8000/mcp
 API_BASE_URL=http://127.0.0.1:8001
 ```
